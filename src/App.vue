@@ -28,7 +28,7 @@ const NAVER_CLIENT_SECRET = "ZooB0MVs14";
 const NAVER_CALLBACK_URL = "http://localhost:3000/auth/naver/callback";
 const getNaver = `https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=${NAVER_CLIENT_ID}&state=${NAVER_CLIENT_SECRET}&redirect_uri=${NAVER_CALLBACK_URL}`;
 
-const GOOGLE_CLIENT_ID = "AIzaSyDzRprn6oZ5_4QY3IBRQGCq3NK1eZDzHvg";
+const GOOGLE_CLIENT_ID = "715904775794-7md4m9na3gv0po48buqr9iahfuftntua.apps.googleusercontent.com";
 const GOOGLE_REDIRECT_URI = "http://localhost:3000/auth/google/callback";
 const getGoogle = `https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A//www.googleapis.com/auth/drive.metadata.readonly&access_type=offline&include_granted_scopes=true&response_type=code&state=state_parameter_passthrough_value&redirect_uri=${GOOGLE_REDIRECT_URI}&client_id=${GOOGLE_CLIENT_ID}`;
 
@@ -50,7 +50,6 @@ export default {
 
     const googleLoginBtn = document.querySelector("#googleLoginBtn");
     function googleLogin() {
-      alert(GOOGLE_REDIRECT_URI);
       window.location.assign(getGoogle);
     }
     googleLoginBtn.onclick = googleLogin;
