@@ -3,18 +3,6 @@
     <img id="kakaoLoginBtn" src="./assets/login/kakao-login-btn.png" width="150"/><br />
     <img id="naverLoginBtn" src="./assets/login/naver-login-btn.png" width="150"/><br />
     <img id="googleLoginBtn" src="./assets/login/google-login-btn.png" width="150"/><br />
-
-    <!-- <button v-on:click="kakaoLoginBtn">
-      <img src="./assets/login/kakao-login-btn.png" width="150" @click="kakaoLoginBtn"/>
-    </button>
-
-    <button v-on:click="kakaoLoginBtn">
-      <img src="./assets/login/naver-login-btn.png" width="150" />
-    </button>
-
-    <button v-on:click="kakaoLoginBtn">
-      <img src="./assets/login/google-login-btn.png" width="150" />
-    </button> -->
   </div>
 </template>
 
